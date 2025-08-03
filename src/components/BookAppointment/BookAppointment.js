@@ -77,7 +77,7 @@ const BookAppointment = () => {
         <div className="success-container">
           <p className="success-message">✅ Appointment booked successfully!</p>
           <button className="home-button" onClick={() => navigate('/appointments')}>
-            Go Appointments
+            Go To Appointments
           </button>
         </div>
       )}
