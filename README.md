@@ -10,7 +10,7 @@ A responsive single-page React application that allows users to:
 
 ## 🚀 Live Demo
 
-[Hosted Link (optional)](https://your-live-demo-link)
+[Hosted Link (optional)](https://health-care-mu-ebon.vercel.app/)
 
 ---
 
@@ -70,7 +70,7 @@ A responsive single-page React application that allows users to:
 ## 💻 Run Locally
 
 ```bash
-git clone https://github.com/your-username/healthcare-appointment-app.git
+git clone https://github.com/Rakesh-19-star/health_care.git
 cd healthcare-appointment-app
 npm install
 npm start

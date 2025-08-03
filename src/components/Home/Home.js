@@ -45,11 +45,7 @@ const Home = () => {
             <h3>Neurology</h3>
             <p>Expert care for brain, spine and nervous system disorders.</p>
           </div>
-          <div className="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/1973/1973820.png" alt="Pediatrics" />
-            <h3>Pediatrics</h3>
-            <p>Compassionate care for children’s health and wellness.</p>
-          </div>
+          
         </div>
       </section>
 
