@@ -11,7 +11,7 @@ A responsive single-page React application that allows users to:
 ## 🚀 Live Demo
 
 [Hosted Link (optional)](https://health-care-mu-ebon.vercel.app/)
-https://health-care-mu-ebon.vercel.app/--click here live link 
+https://health-care-mu-ebon.vercel.app/   --click here for live link 
 Added vercel live link 
 
 ---
