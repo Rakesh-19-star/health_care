@@ -1,0 +1,187 @@
+/* Container for whole profile page */
+.profile-container {
+    padding: 2.5rem 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    background: #f9fbfc;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Spinner container to center the spinner */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+/* Doctor not found container */
+.notfound-container {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #e74c3c;
+    padding: 3rem 1rem;
+}
+
+/* Flex container for image and details side by side */
+.profile-content {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Image wrapper */
+.profile-image-wrapper {
+    flex: 1 1 320px;
+    max-width: 350px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.15);
+    background: #e8f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Doctor image */
+.profile-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.profile-image-wrapper:hover .profile-image {
+    transform: scale(1.05);
+}
+
+/* Details section */
+.profile-details {
+    flex: 1 1 400px;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Doctor name */
+.doctor-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+/* Specialization */
+.doctor-specialization {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin: 0.4rem 0 0.8rem 0;
+    font-style: italic;
+}
+
+/* Availability */
+.doctor-availability {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.doctor-availability .available {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.doctor-availability .unavailable {
+    color: #d32f2f;
+    font-weight: 600;
+}
+
+/* Description paragraph */
+.doctor-description {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.55;
+    margin-bottom: 2rem;
+    white-space: pre-wrap;
+    /* preserve formatting if needed */
+}
+
+/* Book Appointment Button */
+.book-button {
+    align-self: flex-start;
+    padding: 0.65rem 1.8rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, #007bff 25%, #38c4ff 95%);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.35);
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.15s ease;
+    user-select: none;
+}
+
+.book-button:hover:not(.disabled),
+.book-button:focus:not(.disabled) {
+    background: #0056b3;
+    transform: scale(1.05);
+    outline: none;
+}
+
+.book-button.disabled,
+.book-button:disabled {
+    background: #bbb;
+    color: #eee;
+    cursor: not-allowed;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    transform: none;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 900px) {
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image-wrapper,
+    .profile-details {
+        max-width: 100%;
+        flex: none;
+    }
+
+    .book-button {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .doctor-name {
+        font-size: 1.6rem;
+    }
+
+    .doctor-specialization,
+    .doctor-availability,
+    .doctor-description {
+        font-size: 1rem;
+    }
+
+    .book-button {
+        font-size: 1rem;
+        padding: 0.55rem 1.4rem;
+        width: 100%;
+        max-width: 300px;
+    }
+}

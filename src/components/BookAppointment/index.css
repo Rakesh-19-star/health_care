@@ -1,0 +1,187 @@
+/* Container: center content with max width and balanced padding */
+.container {
+    max-width: 480px;
+    margin: 3rem auto 4rem;
+    padding: 2rem 1.6rem;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 85, 204, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f2d50;
+    box-sizing: border-box;
+}
+
+/* Heading: clean, strong, with subtle blue */
+.heading {
+    font-size: 2.25rem;
+    font-weight: 650;
+    text-align: center;
+    color: #184bc1;
+    margin-bottom: 2.2rem;
+    user-select: none;
+}
+
+/* Success Container: neat box with green text and button below */
+.success-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.success-message {
+    color: #27ae60;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    user-select: none;
+}
+
+/* Home button after success */
+.home-button {
+    background-color: #3674ff;
+    color: white;
+    font-weight: 700;
+    padding: 0.6rem 1.6rem;
+    border: none;
+    border-radius: 26px;
+    font-size: 1.05rem;
+    cursor: pointer;
+    box-shadow: 0 5px 16px rgba(54, 116, 255, 0.5);
+    transition: background-color 0.28s ease, transform 0.19s ease;
+    user-select: none;
+    outline-offset: 3px;
+}
+
+.home-button:hover,
+.home-button:focus {
+    background-color: #244ecb;
+    outline: none;
+    transform: scale(1.07);
+}
+
+/* Form: vertical stack and spaced inputs */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Group each label + input for accessibility and spacing */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels: clean, easy to read */
+label {
+    margin-bottom: 0.45rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #253858;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* Inputs: large, rounded, subtle border, nice focus */
+.input {
+    padding: 0.58rem 1rem;
+    font-size: 1rem;
+    border: 1.7px solid #cbd6f0;
+    border-radius: 12px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline-offset: 2.6px;
+    outline-color: transparent;
+    color: #222e57;
+    box-sizing: border-box;
+}
+
+.input::placeholder {
+    color: #abb4d9;
+    font-style: italic;
+}
+
+.input:focus {
+    border-color: #3561ff;
+    box-shadow: 0 0 8px rgba(53, 97, 255, 0.35);
+    outline-color: #3561ff;
+    outline-style: solid;
+    outline-width: 3px;
+}
+
+/* Input error: vivid red border and glow */
+.input-error {
+    border-color: #e03e4d !important;
+    box-shadow: 0 0 6px rgba(224, 62, 77, 0.55);
+}
+
+/* Error message: smaller, distinct red below input */
+.error {
+    margin-top: 0.3rem;
+    font-size: 0.84rem;
+    color: #e03e4d;
+    font-weight: 600;
+    user-select: none;
+}
+
+/* Submit Button: full width, bright blue gradient, rounded */
+.button {
+    margin-top: 1rem;
+    background: linear-gradient(90deg, #3561ff 15%, #45a1ff 90%);
+    color: white;
+    font-weight: 700;
+    font-size: 1.15rem;
+    padding: 0.66rem 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 8px 32px rgba(53, 97, 255, 0.38);
+    user-select: none;
+    transition: background-color 0.3s ease, transform 0.17s ease;
+    width: 100%;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #244ecb;
+    outline: none;
+    transform: scale(1.06);
+}
+
+/* Not found message - center and slight red */
+.notfound {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 3rem 1rem;
+    color: #cc3c3c;
+    font-weight: 700;
+    user-select: none;
+}
+
+/* Responsive Improvements */
+@media (max-width: 650px) {
+    .container {
+        margin: 2.2rem 1.4rem 3rem 1.4rem;
+        padding: 1.8rem 1.2rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    .input {
+        font-size: 0.95rem;
+        padding: 0.55rem 0.9rem;
+    }
+
+    .button {
+        font-size: 1.05rem;
+        padding: 0.6rem 0;
+    }
+
+    .success-message {
+        font-size: 1rem;
+    }
+}

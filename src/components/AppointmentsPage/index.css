@@ -1,0 +1,112 @@
+/* Container for the appointments page */
+.appointments-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    background-color: #f8fafb;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+/* Page heading */
+.appointments-heading {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+/* Message when no appointments exist */
+.no-appointments {
+    font-size: 1.1rem;
+    color: #6c757d;
+    text-align: center;
+    padding: 3rem 1rem;
+    font-style: italic;
+}
+
+/* List container */
+.appointments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.8rem;
+}
+
+/* Individual appointment card */
+.appointment-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 1.2rem 1.5rem;
+    box-shadow: 0 4px 18px rgba(0, 123, 255, 0.12);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    user-select: none;
+}
+
+.appointment-card:hover {
+    box-shadow: 0 10px 38px rgba(0, 123, 255, 0.25);
+    transform: translateY(-3px);
+}
+
+/* Label text in appointment details */
+.label {
+    font-weight: 700;
+    color: #007bff;
+    margin-right: 0.3rem;
+}
+
+/* Appointment info text */
+.appointment-card p {
+    font-size: 1rem;
+    color: #34495e;
+    margin: 0;
+    line-height: 1.35;
+    word-break: break-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .appointments-container {
+        padding: 1rem 1rem 2rem 1rem;
+        max-width: 100%;
+    }
+
+    .appointments-list {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.3rem;
+    }
+
+    .appointments-heading {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .appointments-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .appointment-card {
+        padding: 1rem 1.3rem;
+    }
+
+    .appointment-card p {
+        font-size: 0.95rem;
+    }
+
+    .appointments-heading {
+        font-size: 1.5rem;
+    }
+}
